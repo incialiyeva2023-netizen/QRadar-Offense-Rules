@@ -1,0 +1,10 @@
+title: Kütləvi Fayl Dəyişikliyi Şübhəsi
+description: Qısa müddət ərzində qovluqlarda kütləvi şəkildə fayl şifrələnməsi və ya dəyişdirilməsini aşkarlayır.
+logsource:
+    product: windows
+    service: filesystem
+detection:
+    selection:
+        EventID: 4663
+    condition: selection
+level: critical
