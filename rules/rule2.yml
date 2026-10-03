@@ -1,0 +1,9 @@
+title: İstifadəçinin Admin Qrupuna Əlavə Edilməsi
+description: Təhlükəsizlik pozuntusuna səbəb ola biləcək administrator səlahiyyətlərinin verilməsini aşkarlayır.
+logsource:
+    product: windows
+detection:
+    selection:
+        EventID: 4732
+    condition: selection
+level: high
