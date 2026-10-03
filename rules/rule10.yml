@@ -1,0 +1,11 @@
+title: Xaricdən Şübhəli RDP Qoşulma Cəhdi
+description: Xarici şəbəkədən Remote Desktop (RDP) vasitəsilə uzaqdan qoşulma cəhdlərini aşkarlayır.
+logsource:
+    product: windows
+    service: terminalservices
+detection:
+    selection:
+        EventID: 4624
+        LogonType: 10
+    condition: selection
+level: high
