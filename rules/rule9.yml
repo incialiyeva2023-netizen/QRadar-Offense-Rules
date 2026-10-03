@@ -1,0 +1,10 @@
+title: İcazəsiz Xarici USB Qurğusunun Qoşulması
+description: Sistemə çıxarıla bilən xarici yaddaş qurğularının qoşulmasını aşkarlayır.
+logsource:
+    product: windows
+    service: kernel
+detection:
+    selection:
+        EventID: 2001
+    condition: selection
+level: low
