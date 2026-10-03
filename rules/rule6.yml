@@ -1,0 +1,9 @@
+title: Şübhəli Xarici IP ilə Əlaqə
+description: Məlum təhlükəli və ya zərərli xarici IP ünvanları ilə şəbəkə bağlantısını aşkarlayır.
+logsource:
+    product: firewall
+detection:
+    selection:
+        action: blocked
+    condition: selection
+level: medium
