@@ -1,0 +1,10 @@
+title: Çoxsaylı Uğursuz Giriş Cəhdləri
+description: Qısa müddət ərzində sistemə ardıcıl uğursuz giriş cəhdlərini aşkarlayır.
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID: 4625
+    condition: selection
+level: medium
