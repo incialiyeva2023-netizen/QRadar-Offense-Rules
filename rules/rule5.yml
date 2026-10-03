@@ -1,0 +1,10 @@
+title: Qeyri-iş Saatlarında Sistemə Giriş
+description: Gecə saatlarında və ya iş vaxtından kənar zamanlarda sistemə daxilolmaları aşkarlayır.
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID: 4624
+    condition: selection
+level: low
